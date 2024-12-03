@@ -23,10 +23,10 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<Layout />} />
-          {/* <Route
+          <Route
             path="*"
             element={<Navigate to={isLoggedIn ? "/app/welcome" : "/login"} replace />}
-          /> */}
+          />
         </Routes>
       </Router>
     </>
